@@ -10,17 +10,27 @@
 		8D5B9AE32069829F005D1185 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B9AE22069829F005D1185 /* FoodLogView.swift */; };
 		8D5B9AE5206982FA005D1185 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B9AE4206982FA005D1185 /* AddFoodView.swift */; };
 		8D76D046206B1DBB009612BE /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D045206B1DBB009612BE /* Food.swift */; };
+		8D76D04B206C9A6A009612BE /* caloriesDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */; };
+		8D76D04D206C9A76009612BE /* stepsDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04C206C9A76009612BE /* stepsDisplayView.swift */; };
+		8D76D04F206C9A86009612BE /* weightDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04E206C9A86009612BE /* weightDisplayView.swift */; };
+		8D76D051206CC34D009612BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D76D050206CC34D009612BE /* GoogleService-Info.plist */; };
 		8DA8D79C206328DF004E2D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8D79B206328DF004E2D29 /* AppDelegate.swift */; };
 		8DA8D79E206328DF004E2D29 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8D79D206328DF004E2D29 /* HomeView.swift */; };
 		8DA8D7A1206328DF004E2D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D79F206328DF004E2D29 /* Main.storyboard */; };
 		8DA8D7A3206328DF004E2D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D7A2206328DF004E2D29 /* Assets.xcassets */; };
 		8DA8D7A6206328DF004E2D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D7A4206328DF004E2D29 /* LaunchScreen.storyboard */; };
+		E019ECA49A518368580015AE /* Pods_FitLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FCF30350836F085060C767 /* Pods_FitLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BCD2241CD32690C3D79E1C2 /* Pods-FitLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitLog/Pods-FitLog.release.xcconfig"; sourceTree = "<group>"; };
 		8D5B9AE22069829F005D1185 /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
 		8D5B9AE4206982FA005D1185 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		8D76D045206B1DBB009612BE /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caloriesDisplayView.swift; sourceTree = "<group>"; };
+		8D76D04C206C9A76009612BE /* stepsDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepsDisplayView.swift; sourceTree = "<group>"; };
+		8D76D04E206C9A86009612BE /* weightDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightDisplayView.swift; sourceTree = "<group>"; };
+		8D76D050206CC34D009612BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DA8D798206328DF004E2D29 /* FitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA8D79B206328DF004E2D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA8D79D206328DF004E2D29 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -28,6 +38,8 @@
 		8DA8D7A2206328DF004E2D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA8D7A5206328DF004E2D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA8D7A7206328DF004E2D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FCF30350836F085060C767 /* Pods_FitLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70DDEE93F3E517169BD962C /* Pods-FitLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitLog/Pods-FitLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E019ECA49A518368580015AE /* Pods_FitLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427840360EE1C8F09CBDF3A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F70DDEE93F3E517169BD962C /* Pods-FitLog.debug.xcconfig */,
+				8BCD2241CD32690C3D79E1C2 /* Pods-FitLog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8DA8D78F206328DF004E2D29 = {
 			isa = PBXGroup;
 			children = (
 				8DA8D79A206328DF004E2D29 /* FitLog */,
 				8DA8D799206328DF004E2D29 /* Products */,
+				427840360EE1C8F09CBDF3A1 /* Pods */,
+				99D826BBADB225DE39AD475E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +89,24 @@
 				8D5B9AE22069829F005D1185 /* FoodLogView.swift */,
 				8D5B9AE4206982FA005D1185 /* AddFoodView.swift */,
 				8DA8D79F206328DF004E2D29 /* Main.storyboard */,
+				8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */,
+				8D76D04C206C9A76009612BE /* stepsDisplayView.swift */,
+				8D76D04E206C9A86009612BE /* weightDisplayView.swift */,
 				8DA8D7A2206328DF004E2D29 /* Assets.xcassets */,
 				8DA8D7A4206328DF004E2D29 /* LaunchScreen.storyboard */,
 				8DA8D7A7206328DF004E2D29 /* Info.plist */,
 				8D76D045206B1DBB009612BE /* Food.swift */,
+				8D76D050206CC34D009612BE /* GoogleService-Info.plist */,
 			);
 			path = FitLog;
+			sourceTree = "<group>";
+		};
+		99D826BBADB225DE39AD475E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7FCF30350836F085060C767 /* Pods_FitLog.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DA8D7AA206328DF004E2D29 /* Build configuration list for PBXNativeTarget "FitLog" */;
 			buildPhases = (
+				6B04D8247DACA2CF8961E186 /* [CP] Check Pods Manifest.lock */,
 				8DA8D794206328DF004E2D29 /* Sources */,
 				8DA8D795206328DF004E2D29 /* Frameworks */,
 				8DA8D796206328DF004E2D29 /* Resources */,
+				8CE593E577594B5FB0F2E21D /* [CP] Embed Pods Frameworks */,
+				92830237B128B5F85E0C8EFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +172,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA8D7A6206328DF004E2D29 /* LaunchScreen.storyboard in Resources */,
+				8D76D051206CC34D009612BE /* GoogleService-Info.plist in Resources */,
 				8DA8D7A3206328DF004E2D29 /* Assets.xcassets in Resources */,
 				8DA8D7A1206328DF004E2D29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B04D8247DACA2CF8961E186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE593E577594B5FB0F2E21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FitLog/Pods-FitLog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitLog/Pods-FitLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92830237B128B5F85E0C8EFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitLog/Pods-FitLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DA8D794206328DF004E2D29 /* Sources */ = {
@@ -147,9 +249,12 @@
 			files = (
 				8D5B9AE5206982FA005D1185 /* AddFoodView.swift in Sources */,
 				8DA8D79E206328DF004E2D29 /* HomeView.swift in Sources */,
+				8D76D04D206C9A76009612BE /* stepsDisplayView.swift in Sources */,
+				8D76D04F206C9A86009612BE /* weightDisplayView.swift in Sources */,
 				8D76D046206B1DBB009612BE /* Food.swift in Sources */,
 				8D5B9AE32069829F005D1185 /* FoodLogView.swift in Sources */,
 				8DA8D79C206328DF004E2D29 /* AppDelegate.swift in Sources */,
+				8D76D04B206C9A6A009612BE /* caloriesDisplayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +389,7 @@
 		};
 		8DA8D7AB206328DF004E2D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70DDEE93F3E517169BD962C /* Pods-FitLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +404,7 @@
 		};
 		8DA8D7AC206328DF004E2D29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCD2241CD32690C3D79E1C2 /* Pods-FitLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
