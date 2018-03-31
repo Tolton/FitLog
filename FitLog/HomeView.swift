@@ -66,7 +66,7 @@ class HomeView: UIViewController, UITextViewDelegate {
             } else {
                 let currSteps = value?["Steps"] as? String ?? ""
                 let currWeight = value?["Weight"] as? String ?? ""
-                let currCalories = value?["Steps"] as? String ?? ""
+                let currCalories = value?["Food"] as? String ?? ""
                 self.weightTextField.text = currWeight
                 self.stepsTextField.text = currSteps
                 self.caloriesTextField.text = currCalories
@@ -83,11 +83,10 @@ class HomeView: UIViewController, UITextViewDelegate {
                 self.weightTextField.text = value
             } else if snapshot.key == "Steps" {
                 self.stepsTextField.text = value
-            } else {
+            } else if snapshot.key == "Food" {
                 self.caloriesTextField.text = value
             }
            
-            print("\(value)")
         })
     }
 
