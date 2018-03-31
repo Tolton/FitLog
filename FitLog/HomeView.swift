@@ -22,6 +22,7 @@ class HomeView: UIViewController, UITextViewDelegate {
     @IBOutlet weak var weightTextView: UITextView!
     @IBOutlet weak var stepsTextView: UITextView!
     var ref: DatabaseReference!
+    var refHandle: DatabaseHandle!
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.isEditable = false
@@ -46,11 +47,11 @@ class HomeView: UIViewController, UITextViewDelegate {
         
         let date = Date()
         let formatDate = DateFormatter()
-        formatDate.dateFormat = "dd,MM,yyyy"
+        formatDate.dateFormat = "dd-MM-yyyy"
         let thisDate = formatDate.string(from: date)
         
+        //Checks if the user has logged any for today, if not then creates them with default 0 values, then assignes the text fields a value one time only
         ref.child(userID!).child(thisDate).observeSingleEvent(of: .value, with: { (snapshot) in
-            
             // Get user value
             let value = snapshot.value as? NSDictionary
             if value == nil {
@@ -74,6 +75,20 @@ class HomeView: UIViewController, UITextViewDelegate {
         }) { (error) in
             print(error.localizedDescription)
         }
+        refHandle = ref.child(userID!).child(thisDate).observe(.childChanged, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as! String
+            //check which child was changed
+            if snapshot.key == "Weight" {
+                self.weightTextField.text = value
+            } else if snapshot.key == "Steps" {
+                self.stepsTextField.text = value
+            } else {
+                self.caloriesTextField.text = value
+            }
+           
+            print("\(value)")
+        })
     }
 
     override func didReceiveMemoryWarning() {

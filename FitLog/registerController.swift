@@ -25,7 +25,7 @@ class registerController: UIViewController {
                     
                     let date = Date()
                     let formatDate = DateFormatter()
-                    formatDate.dateFormat = "dd,MM,yyyy"
+                    formatDate.dateFormat = "dd-MM-yyyy"
                     let thisDate = formatDate.string(from: date)
                     
                     
