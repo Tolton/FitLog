@@ -343,7 +343,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-D9-z1h">
-                                <rect key="frame" x="139" y="458" width="66" height="30"/>
+                                <rect key="frame" x="154" y="583" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Food"/>
                                 <connections>
@@ -409,14 +409,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-BS-xFg">
-                                <rect key="frame" x="104" y="441" width="97" height="30"/>
+                                <rect key="frame" x="106" y="544" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-pq-l2a" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anb-yD-XmT">
-                                <rect key="frame" x="198" y="441" width="69" height="30"/>
+                                <rect key="frame" x="211" y="544" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Steps"/>
                                 <connections>
@@ -429,7 +434,8 @@
                         <viewLayoutGuide key="safeArea" id="4dX-tM-Htt"/>
                     </view>
                     <connections>
-                        <outlet property="stepsTextField" destination="SrH-BS-xFg" id="7Vy-KX-bvU"/>
+                        <outlet property="stepsChartView" destination="gEC-pq-l2a" id="NG5-hY-GYe"/>
+                        <outlet property="stepsTextField" destination="SrH-BS-xFg" id="uFp-Ou-gg4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxJ-V7-pbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -526,6 +532,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="e95-nH-Nna"/>
         <segue reference="LAM-vx-l4o"/>
-        <segue reference="2yV-2l-LYK"/>
+        <segue reference="GDi-iH-19P"/>
     </inferredMetricsTieBreakers>
 </document>

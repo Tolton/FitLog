@@ -119,7 +119,7 @@ class weightDisplayView: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        weightTextField.delegate = self as! UITextFieldDelegate
+        weightTextField.delegate = self
         createGraph()
         // Do any additional setup after loading the view, typically from a nib.
     }
