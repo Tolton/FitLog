@@ -13,12 +13,15 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var ref: DatabaseReference!
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        let db = Database.database().reference()
-        db.setValue("Hello Firebase")
+        
+        ref = Database.database().reference()
+        
         // Override point for customization after application launch.
         return true
     }

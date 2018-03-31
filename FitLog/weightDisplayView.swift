@@ -7,22 +7,36 @@
 // Some Charts code structure used from https://medium.com/@OsianSmith/creating-a-line-chart-in-swift-3-and-ios-10-2f647c95392e
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 import Charts
 
 
 class weightDisplayView: UIViewController {
 
     var chartData = [ChartDataEntry]()
-    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var weightChartView: LineChartView!
     @IBOutlet weak var weightTextField: UITextField!
     
     @IBAction func weightLogButton(_ sender: UIButton) {
-        let num = Double(weightTextField.text!)
-        //send weightTextField.text to backend and refresh the graph
+        ref = Database.database().reference()
+        let userID = Auth.auth().currentUser?.uid
         
-        let value = ChartDataEntry(x: Double(chartData.count), y: num!)
+        let currWeight = Double(weightTextField.text!)
+        
+        //get the current date
+        let date = Date()
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "dd,MM,yyyy"
+        let thisDate = formatDate.string(from: date)
+       
+        self.ref.updateChildValues(["\(userID!)/\(thisDate)/Weight/": "\(currWeight!)"])
+        
+    
+        
+        let value = ChartDataEntry(x: Double(chartData.count), y: currWeight!)
         chartData.append(value)
         updateGraph()
 

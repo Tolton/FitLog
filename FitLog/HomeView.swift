@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 import os.log
+
 
 class HomeView: UIViewController, UITextViewDelegate {
 
 
+    @IBOutlet weak var caloriesTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
+    @IBOutlet weak var stepsTextField: UITextField!
     @IBOutlet weak var caloriesTextView: UITextView!
     @IBOutlet weak var weightTextView: UITextView!
     @IBOutlet weak var stepsTextView: UITextView!
+    var ref: DatabaseReference!
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.isEditable = false
@@ -29,10 +36,44 @@ class HomeView: UIViewController, UITextViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true)
         caloriesTextView.layer.borderWidth = 1
         weightTextView.layer.borderWidth = 1
         stepsTextView.layer.borderWidth = 1
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref = Database.database().reference()
+        
+        let date = Date()
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "dd,MM,yyyy"
+        let thisDate = formatDate.string(from: date)
+        
+        ref.child(userID!).child(thisDate).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            if value == nil {
+                //setup the database
+                let data = ["Weight": "0",
+                            "Steps": "0",
+                            "Food": "0"] as [String : Any]
+                self.ref.updateChildValues(["\(userID!)/\(thisDate)/": data])
+                self.weightTextField.text = "Not Logged"
+                self.stepsTextField.text = "0"
+                self.caloriesTextField.text = "0"
+            } else {
+                let currSteps = value?["Steps"] as? String ?? ""
+                let currWeight = value?["Weight"] as? String ?? ""
+                let currCalories = value?["Steps"] as? String ?? ""
+                self.weightTextField.text = currWeight
+                self.stepsTextField.text = currSteps
+                self.caloriesTextField.text = currCalories
+                
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
