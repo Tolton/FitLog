@@ -12,6 +12,7 @@ import FirebaseAuth
 
 class registerController: UIViewController {
 
+    @IBOutlet weak var passView: UITextView!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
@@ -38,13 +39,16 @@ class registerController: UIViewController {
                     ref.child("\(userID)/").setValue(thisDate)
                     ref.child("\(userID)/\(thisDate)/").setValue(data)
                     self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.passView.isHidden = false
+                    self.passView.text = "Username in use, try a different one."
                 }
             }
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passView.isHidden = true
         // Do any additional setup after loading the view.
     }
 

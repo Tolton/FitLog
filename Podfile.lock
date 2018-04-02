@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.0)
   - Charts (3.1.0):
     - Charts/Core (= 3.1.0)
   - Charts/Core (3.1.0)
@@ -47,12 +48,14 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - Alamofire
   - Charts
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
 
 SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Charts: 0b0c96f6118b6ce63f11adbcaa3b31045ee4d772
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
@@ -65,6 +68,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 716b867df522648adcfd5f808bb33770d9baf2f6
+PODFILE CHECKSUM: c0dd0ca2c70351b81ac28f9ecc0ab0673453aebb
 
 COCOAPODS: 1.4.0

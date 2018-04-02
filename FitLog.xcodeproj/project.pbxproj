@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D5B9AE32069829F005D1185 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B9AE22069829F005D1185 /* FoodLogView.swift */; };
 		8D5B9AE5206982FA005D1185 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B9AE4206982FA005D1185 /* AddFoodView.swift */; };
-		8D76D046206B1DBB009612BE /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D045206B1DBB009612BE /* Food.swift */; };
 		8D76D04B206C9A6A009612BE /* caloriesDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */; };
 		8D76D04D206C9A76009612BE /* stepsDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04C206C9A76009612BE /* stepsDisplayView.swift */; };
 		8D76D04F206C9A86009612BE /* weightDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76D04E206C9A86009612BE /* weightDisplayView.swift */; };
@@ -19,7 +18,6 @@
 		8DA8D7A1206328DF004E2D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D79F206328DF004E2D29 /* Main.storyboard */; };
 		8DA8D7A3206328DF004E2D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D7A2206328DF004E2D29 /* Assets.xcassets */; };
 		8DA8D7A6206328DF004E2D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8D7A4206328DF004E2D29 /* LaunchScreen.storyboard */; };
-		8DE393CA206DF281002CAD3A /* AllClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE393C9206DF281002CAD3A /* AllClasses.swift */; };
 		8DE393CC206EB2F3002CAD3A /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE393CB206EB2F3002CAD3A /* loginController.swift */; };
 		8DE393CE206EBE33002CAD3A /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE393CD206EBE33002CAD3A /* registerController.swift */; };
 		E019ECA49A518368580015AE /* Pods_FitLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FCF30350836F085060C767 /* Pods_FitLog.framework */; };
@@ -29,7 +27,6 @@
 		8BCD2241CD32690C3D79E1C2 /* Pods-FitLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitLog/Pods-FitLog.release.xcconfig"; sourceTree = "<group>"; };
 		8D5B9AE22069829F005D1185 /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
 		8D5B9AE4206982FA005D1185 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
-		8D76D045206B1DBB009612BE /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caloriesDisplayView.swift; sourceTree = "<group>"; };
 		8D76D04C206C9A76009612BE /* stepsDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepsDisplayView.swift; sourceTree = "<group>"; };
 		8D76D04E206C9A86009612BE /* weightDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightDisplayView.swift; sourceTree = "<group>"; };
@@ -41,7 +38,6 @@
 		8DA8D7A2206328DF004E2D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA8D7A5206328DF004E2D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA8D7A7206328DF004E2D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DE393C9206DF281002CAD3A /* AllClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClasses.swift; sourceTree = "<group>"; };
 		8DE393CB206EB2F3002CAD3A /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		8DE393CD206EBE33002CAD3A /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		E7FCF30350836F085060C767 /* Pods_FitLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,11 +96,9 @@
 				8D76D04A206C9A6A009612BE /* caloriesDisplayView.swift */,
 				8D76D04C206C9A76009612BE /* stepsDisplayView.swift */,
 				8D76D04E206C9A86009612BE /* weightDisplayView.swift */,
-				8DE393C9206DF281002CAD3A /* AllClasses.swift */,
 				8DA8D7A2206328DF004E2D29 /* Assets.xcassets */,
 				8DA8D7A4206328DF004E2D29 /* LaunchScreen.storyboard */,
 				8DA8D7A7206328DF004E2D29 /* Info.plist */,
-				8D76D045206B1DBB009612BE /* Food.swift */,
 				8D76D050206CC34D009612BE /* GoogleService-Info.plist */,
 			);
 			path = FitLog;
@@ -215,6 +209,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FitLog/Pods-FitLog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -223,6 +218,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -260,10 +256,8 @@
 				8DE393CC206EB2F3002CAD3A /* loginController.swift in Sources */,
 				8DA8D79E206328DF004E2D29 /* HomeView.swift in Sources */,
 				8DE393CE206EBE33002CAD3A /* registerController.swift in Sources */,
-				8DE393CA206DF281002CAD3A /* AllClasses.swift in Sources */,
 				8D76D04D206C9A76009612BE /* stepsDisplayView.swift in Sources */,
 				8D76D04F206C9A86009612BE /* weightDisplayView.swift in Sources */,
-				8D76D046206B1DBB009612BE /* Food.swift in Sources */,
 				8D5B9AE32069829F005D1185 /* FoodLogView.swift in Sources */,
 				8DA8D79C206328DF004E2D29 /* AppDelegate.swift in Sources */,
 				8D76D04B206C9A6A009612BE /* caloriesDisplayView.swift in Sources */,

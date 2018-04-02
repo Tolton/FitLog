@@ -8,9 +8,11 @@
 
 import UIKit
 import FirebaseAuth
+import Alamofire
 
 class loginController: UIViewController {
 
+    @IBOutlet weak var passView: UITextView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBAction func loginButton(_ sender: UIButton) {
@@ -18,6 +20,9 @@ class loginController: UIViewController {
             // ...
             if user != nil {
                 self.performSegue(withIdentifier: "loginSuccess", sender: Any?.self)
+            } else {
+                self.passView.isHidden = false
+                self.passView.text = "You entered incorrect information, please try again."
             }
         }
         
@@ -27,7 +32,8 @@ class loginController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        passView.isHidden = true
+        
     }
 
     override func didReceiveMemoryWarning() {
